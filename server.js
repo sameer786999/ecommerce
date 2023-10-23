@@ -20,8 +20,3 @@ app.listen(PORT,()=>{
     console.log(`Mera server hain bhai ,mode ${process.env.DEV_MODE} ,par run ho raha hain ${PORT} `.bgCyan.black);
     
 })
-
-
- 
-
-
