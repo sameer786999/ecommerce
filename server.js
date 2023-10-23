@@ -18,7 +18,7 @@ const PORT=process.env.PORT || 8080;
 //back ` is used for making the message dynamic
 app.listen(PORT,()=>{
     console.log(`Mera server hain bhai ,mode ${process.env.DEV_MODE} ,par run ho raha hain ${PORT} `.bgCyan.black);
-    console.log(`Fuck you Bitch`.bgCyan.black);
+    
 })
 
 
