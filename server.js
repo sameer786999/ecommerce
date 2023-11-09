@@ -1,10 +1,21 @@
 import express from "express";
 import colors from "colors";
+import morgan from "morgan";
 import dotenv from "dotenv"
-const app=express();
 
 
+import connectDB from "./config/db.js";
+
+ 
 dotenv.config();
+const app = express();
+
+//database config
+connectDB();
+//middleware
+app.use(express.json());
+app.use(morgan('dev'));
+
 
 app.get('/',(req,res)=>{
     res.send(
@@ -12,7 +23,7 @@ app.get('/',(req,res)=>{
     
 })
 
-const PORT=process.env.PORT || 8080;
+const PORT=process.env.PORT || 8000;
 
 //run
 //back ` is used for making the message dynamic
@@ -20,3 +31,4 @@ app.listen(PORT,()=>{
     console.log(`Mera server hain bhai ,mode ${process.env.DEV_MODE} ,par run ho raha hain ${PORT} `.bgCyan.black);
     
 })
+
