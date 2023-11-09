@@ -1,6 +1,3 @@
-const registerController=()=>{
-
+export const registerController=()=>{
+          
 }
-
-
-export default {registerController};
