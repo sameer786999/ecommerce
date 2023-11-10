@@ -7,7 +7,6 @@ import connectDB from "./config/db.js";
 import authRoute from "./routers/authRoute.js";
 
 
-
 dotenv.config();
 const app = express();
 
@@ -27,7 +26,7 @@ app.get('/',(req,res)=>{
     
 })
 
-const PORT=process.env.PORT || 8080;
+const PORT=process.env.PORT || 8000;
 
 //run
 //back ` is used for making the message dynamic
