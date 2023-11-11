@@ -1,14 +1,13 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-
-const Homepage = () => {
+const PageNotFound = () => {
   return (
     <div>
       <Layout>
-        <h1>Homepage</h1>
+        <h1>PageoutFound</h1>
       </Layout>
     </div>
-  );
+  )
 }
 
-export default Homepage
+export default PageNotFound
