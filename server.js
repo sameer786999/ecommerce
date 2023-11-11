@@ -13,6 +13,7 @@ const app = express();
 //database config
 connectDB();
 
+
 //middleware
 app.use(express.json());
 app.use(morgan('dev'));
