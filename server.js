@@ -2,7 +2,7 @@ import express from "express";
 import colors from "colors";
 import morgan from "morgan";
 import dotenv from "dotenv"
-
+import cors from 'cors'
 import connectDB from "./config/db.js";
 import authRoute from "./routers/authRoute.js";
 
@@ -15,6 +15,7 @@ connectDB();
 
 
 //middleware
+app.use(cors())
 app.use(express.json());
 app.use(morgan('dev'));
 
